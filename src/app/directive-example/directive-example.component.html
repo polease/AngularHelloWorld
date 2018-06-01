@@ -1,0 +1,8 @@
+<p>
+  directive-example works!
+</p>
+
+
+<button (click)="status = !status;clicks.push(clicks.length);" >Display Details</button>
+<p *ngIf="status">Secret Message here!</p>
+<p *ngFor="let c of clicks;let i=index" [ngStyle]="{backgroundColor: getBackgroundColor(c)}" [ngClass]="{'highlight':c>4}">{{c}}, {{i}}</p>

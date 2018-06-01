@@ -1,0 +1,7 @@
+<p>
+  username works!
+</p>
+<input type="text" [(ngModel)]="username" />
+{{username}}
+<button class="form-control" [disabled]="!username" (click)="onAddUser()">add user</button>
+
